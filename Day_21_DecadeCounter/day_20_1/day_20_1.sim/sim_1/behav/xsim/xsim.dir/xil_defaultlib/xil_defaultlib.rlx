@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/fpga_series_prac/day_20_1/day_20_1.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/fpga_series_prac/day_20_1/day_20_1.srcs/sim_1/new/tb_decade_ctr.v,1768833716,verilog,,,,tb_decade_ctr,,,,,,,,
+C:/fpga_series_prac/day_20_1/day_20_1.srcs/sources_1/new/btn_debounce.v,1768737406,verilog,,C:/fpga_series_prac/day_20_1/day_20_1.srcs/sources_1/new/decade_ctr.v,,btn_debounce,,,,,,,,
+C:/fpga_series_prac/day_20_1/day_20_1.srcs/sources_1/new/decade_ctr.v,1768833638,verilog,,C:/fpga_series_prac/day_20_1/day_20_1.srcs/sources_1/new/tff.v,,decade_ctr,,,,,,,,
+C:/fpga_series_prac/day_20_1/day_20_1.srcs/sources_1/new/tff.v,1768739192,verilog,,C:/fpga_series_prac/day_20_1/day_20_1.srcs/sim_1/new/tb_decade_ctr.v,,tff,,,,,,,,

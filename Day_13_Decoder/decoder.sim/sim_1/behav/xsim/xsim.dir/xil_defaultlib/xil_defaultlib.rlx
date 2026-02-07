@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/fpga_series/decoder/decoder.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/fpga_series/decoder/decoder.srcs/sim_1/imports/Documents/tb_decoder.v,1760694603,verilog,,,,tb_decoder,,,,,,,,
+C:/fpga_series/decoder/decoder.srcs/sources_1/imports/Documents/decoder.v,1760694809,verilog,,C:/fpga_series/decoder/decoder.srcs/sim_1/imports/Documents/tb_decoder.v,,dec_2_4,,,,,,,,

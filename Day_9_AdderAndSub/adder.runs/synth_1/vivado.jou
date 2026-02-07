@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Oct 10 17:12:04 2025
+# Process ID: 25716
+# Current directory: C:/fpga_series/adder/adder.runs/synth_1
+# Command line: vivado.exe -log adder_8_bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adder_8_bit.tcl
+# Log file: C:/fpga_series/adder/adder.runs/synth_1/adder_8_bit.vds
+# Journal file: C:/fpga_series/adder/adder.runs/synth_1\vivado.jou
+# Running On        :Saurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16944 MB
+# Swap memory       :5931 MB
+# Total Virtual     :22876 MB
+# Available Virtual :7973 MB
+#-----------------------------------------------------------
+source adder_8_bit.tcl -notrace

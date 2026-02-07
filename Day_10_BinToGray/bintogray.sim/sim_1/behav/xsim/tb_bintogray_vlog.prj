@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../bintogray.srcs/sources_1/imports/Documents/bintogray.v" \
+"../../../../bintogray.srcs/sim_1/imports/Documents/tb_bintogray.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

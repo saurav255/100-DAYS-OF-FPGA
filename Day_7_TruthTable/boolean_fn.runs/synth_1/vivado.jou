@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Sep 27 13:25:39 2025
+# Process ID: 2424
+# Current directory: C:/fpga_series/boolean_fn/boolean_fn.runs/synth_1
+# Command line: vivado.exe -log bool_fn.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bool_fn.tcl
+# Log file: C:/fpga_series/boolean_fn/boolean_fn.runs/synth_1/bool_fn.vds
+# Journal file: C:/fpga_series/boolean_fn/boolean_fn.runs/synth_1\vivado.jou
+# Running On        :Saurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16944 MB
+# Swap memory       :7862 MB
+# Total Virtual     :24807 MB
+# Available Virtual :13230 MB
+#-----------------------------------------------------------
+source bool_fn.tcl -notrace

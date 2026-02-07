@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../Users/Saurav Kumar/Documents/fpga_verilog/pwm_generator.v" \
+"../../../../../../Users/Saurav Kumar/Documents/fpga_verilog/tb_pwm_generator.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

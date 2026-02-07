@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Nov 28 16:06:05 2025
+# Process ID: 17480
+# Current directory: C:/fpga_series/srff
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8132 C:\fpga_series\srff\srff.xpr
+# Log file: C:/fpga_series/srff/vivado.log
+# Journal file: C:/fpga_series/srff\vivado.jou
+# Running On        :Saurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16944 MB
+# Swap memory       :13533 MB
+# Total Virtual     :30478 MB
+# Available Virtual :16349 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/fpga_series/srff/srff.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_srff.tcl
+relaunch_sim
+create_project jkff C:/fpga_series/jkff -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+add_files -norecurse -scan_for_includes {{C:/Users/Saurav Kumar/Documents/jkff.v}}
+import_files -norecurse {{C:/Users/Saurav Kumar/Documents/jkff.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/fpga_series/jkff/jkff.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/fpga_series/jkff/jkff.srcs/sim_1/new/tb_jkff.v w ]
+add_files -fileset sim_1 C:/fpga_series/jkff/jkff.srcs/sim_1/new/tb_jkff.v
+current_project srff
+relaunch_sim
+current_project jkff
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_jkff.tcl
+create_project tff C:/fpga_series/tff -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+add_files -norecurse -scan_for_includes {{C:/Users/Saurav Kumar/Documents/tff.v}}
+import_files -norecurse {{C:/Users/Saurav Kumar/Documents/tff.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/fpga_series/tff/tff.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/fpga_series/tff/tff.srcs/sim_1/new/tb_tff.v w ]
+add_files -fileset sim_1 C:/fpga_series/tff/tff.srcs/sim_1/new/tb_tff.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_tff.tcl
+file mkdir C:/fpga_series/tff/tff.srcs/constrs_1
+file mkdir C:/fpga_series/tff/tff.srcs/constrs_1/new
+close [ open C:/fpga_series/tff/tff.srcs/constrs_1/new/constr.xdc w ]
+add_files -fileset constrs_1 C:/fpga_series/tff/tff.srcs/constrs_1/new/constr.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+file mkdir C:/fpga_series/jkff/jkff.srcs/constrs_1
+file mkdir C:/fpga_series/jkff/jkff.srcs/constrs_1/new
+current_project jkff
+close [ open C:/fpga_series/jkff/jkff.srcs/constrs_1/new/contr.xdc w ]
+add_files -fileset constrs_1 C:/fpga_series/jkff/jkff.srcs/constrs_1/new/contr.xdc
+current_sim simulation_2
+current_project tff
+current_sim simulation_3
+current_project jkff
+current_sim simulation_2
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+file mkdir C:/fpga_series/srff/srff.srcs/constrs_1
+file mkdir C:/fpga_series/srff/srff.srcs/constrs_1/new
+current_project srff
+close [ open C:/fpga_series/srff/srff.srcs/constrs_1/new/constr.xdc w ]
+add_files -fileset constrs_1 C:/fpga_series/srff/srff.srcs/constrs_1/new/constr.xdc
+current_sim simulation_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+current_project tff
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/fpga_series/tff/tff.runs/impl_1/tff.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/fpga_series/tff/tff.runs/impl_1/tff.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+current_project srff
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/fpga_series/srff/srff.runs/impl_1/srff.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/fpga_series/srff/srff.runs/impl_1/srff.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+current_project jkff
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/fpga_series/jkff/jkff.runs/impl_1/jkff.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/fpga_series/jkff/jkff.runs/impl_1/jkff.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_project srff
+close_sim
+close_project
+current_project jkff
+close_sim
+close_project
+close_sim

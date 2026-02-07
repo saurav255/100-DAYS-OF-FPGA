@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Jan 29 20:40:09 2026
+# Process ID: 12024
+# Current directory: C:/fpga_series/pwm_led/pwm_led.runs/impl_1
+# Command line: vivado.exe -log pwm_generator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pwm_generator.tcl -notrace
+# Log file: C:/fpga_series/pwm_led/pwm_led.runs/impl_1/pwm_generator.vdi
+# Journal file: C:/fpga_series/pwm_led/pwm_led.runs/impl_1\vivado.jou
+# Running On        :Saurav
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13450HX
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16944 MB
+# Swap memory       :16944 MB
+# Total Virtual     :33889 MB
+# Available Virtual :14504 MB
+#-----------------------------------------------------------
+source pwm_generator.tcl -notrace

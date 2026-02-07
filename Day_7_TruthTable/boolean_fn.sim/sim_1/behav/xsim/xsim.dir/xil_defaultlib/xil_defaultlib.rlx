@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/fpga_series/boolean_fn/boolean_fn.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/fpga_series/boolean_fn/boolean_fn.srcs/sim_1/new/tb_bool_fn.v,1758957825,verilog,,,,tb_bool_fn,,,,,,,,
+C:/fpga_series/boolean_fn/boolean_fn.srcs/sources_1/new/bool_fn.v,1758958669,verilog,,C:/fpga_series/boolean_fn/boolean_fn.srcs/sim_1/new/tb_bool_fn.v,,bool_fn;majority,,,,,,,,
